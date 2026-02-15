@@ -1,0 +1,61 @@
+{
+    "name": "coquibot/coqui-brave-search",
+    "description": "Brave Search toolkit for Coqui — web and news search via the Brave Search API",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Carmelo Santana"
+        }
+    ],
+    "keywords": [
+        "php-agents",
+        "brave-search",
+        "web-search",
+        "coqui",
+        "toolkit"
+    ],
+    "require": {
+        "php": "^8.4",
+        "carmelosantana/php-agents": "^0.3",
+        "symfony/http-client": "^7.0"
+    },
+    "require-dev": {
+        "pestphp/pest": "^3.0",
+        "phpstan/phpstan": "^2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "CoquiBrave\\BraveSearch\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "CoquiBrave\\BraveSearch\\Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    },
+    "scripts": {
+        "test": "pest",
+        "analyse": "phpstan analyse"
+    },
+    "extra": {
+        "php-agents": {
+            "toolkits": [
+                "CoquiBrave\\BraveSearch\\BraveSearchToolkit"
+            ],
+            "description": "Brave Search — web and news search powered by the Brave Search API",
+            "credentials": {
+                "BRAVE_SEARCH_API_KEY": "Brave Search API key — free tier: 2,000 queries/month at https://brave.com/search/api/"
+            }
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
