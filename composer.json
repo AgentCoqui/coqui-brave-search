@@ -17,7 +17,7 @@
     ],
     "require": {
         "php": "^8.4",
-        "carmelosantana/php-agents": "^0.3",
+        "carmelosantana/php-agents": "^0.3 || ^0.4",
         "symfony/http-client": "^7.0"
     },
     "require-dev": {
