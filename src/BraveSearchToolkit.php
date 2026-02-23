@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace CoquiBrave\BraveSearch;
+namespace CoquiBot\Toolkits\BraveSearch;
 
 use CarmeloSantana\PHPAgents\Contract\ToolInterface;
 use CarmeloSantana\PHPAgents\Contract\ToolkitInterface;

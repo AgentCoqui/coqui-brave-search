@@ -1,5 +1,5 @@
 {
-    "name": "coquibot/coqui-brave-search",
+    "name": "coquibot/coqui-toolkit-brave-search",
     "description": "Brave Search toolkit for Coqui — web and news search via the Brave Search API",
     "type": "library",
     "license": "MIT",
@@ -17,7 +17,7 @@
     ],
     "require": {
         "php": "^8.4",
-        "carmelosantana/php-agents": "^0.3 || ^0.4",
+        "carmelosantana/php-agents": "^0.6",
         "symfony/http-client": "^7.0"
     },
     "require-dev": {
@@ -26,12 +26,12 @@
     },
     "autoload": {
         "psr-4": {
-            "CoquiBrave\\BraveSearch\\": "src/"
+            "CoquiBot\\Toolkits\\BraveSearch\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "CoquiBrave\\BraveSearch\\Tests\\": "tests/"
+            "CoquiBot\\Toolkits\\BraveSearch\\Tests\\": "tests/"
         }
     },
     "config": {
@@ -48,7 +48,7 @@
     "extra": {
         "php-agents": {
             "toolkits": [
-                "CoquiBrave\\BraveSearch\\BraveSearchToolkit"
+                "CoquiBot\\Toolkits\\BraveSearch\\BraveSearchToolkit"
             ],
             "description": "Brave Search — web and news search powered by the Brave Search API",
             "credentials": {
