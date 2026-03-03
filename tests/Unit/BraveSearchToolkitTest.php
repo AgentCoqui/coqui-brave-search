@@ -3,7 +3,7 @@
 declare(strict_types=1);
 
 use CarmeloSantana\PHPAgents\Enum\ToolResultStatus;
-use CoquiBrave\BraveSearch\BraveSearchToolkit;
+use CoquiBot\Toolkits\BraveSearch\BraveSearchToolkit;
 use Symfony\Component\HttpClient\MockHttpClient;
 use Symfony\Component\HttpClient\Response\MockResponse;
 
